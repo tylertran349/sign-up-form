@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Sign Up Form</title>
-        <!-- Import Montserrat font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script> <!-- Import GitHub footer icon from Font Awesome -->
     </head>
     <body>
         <div id="left-column">
-
+            <div id="transparent-background">
+                <img id="odin-logo" src="odin-logo.png" alt="Odin Project Logo">
+                <div id="odin-text">&nbsp;ODIN</div>
+            </div>
+            <div id="photo-credit">Photo by <a href="https://unsplash.com/@samferrara" target="_blank">Samuel Ferrara</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></div>
         </div>
         <div id="right-column">
             <div id="top-third">
@@ -27,30 +27,34 @@
                             <div id="left-inputs">
                                 <div id="input-pair">
                                     <label for="first-name">FIRST NAME</label>
-                                    <input type="text" id="first-name" name="first_name">
+                                    <input type="text" id="first-name" name="first_name" required placeholder="e.g. Jane">
                                 </div>
                                 <div id="input-pair">
                                     <label for="email">EMAIL</label>
-                                    <input type="text" id="email" name="email">
+                                    <input type="email" id="email" name="email" required placeholder="e.g. youremail@gmail.com">
                                 </div>
                                 <div id="input-pair">
                                     <label for="password">PASSWORD</label>
-                                    <input type="text" id="password" name="password">
+
+                                    <!-- Password must have at least 8 characters and at least 1 uppercase letter, at least 1 lowercase letter, at least 1 number, and at least 1 special character -->
+                                    <input type="text" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Your password must have at least 8 characters and at least 1 uppercase letter, at least 1 lowercase letter, at least 1 number, and at least 1 special character.">
                                 </div>
                             </div>
                             
                             <div id="right-inputs">
                                 <div id="input-pair">
                                     <label for="last-name">LAST NAME</label>
-                                    <input type="text" id="last-name" name="last_name">
+                                    <input type="text" id="last-name" name="last_name" required placeholder="e.g. Doe">
                                 </div>
                                 <div id="input-pair">
-                                    <label for="phone-number">PHONE NUMBER</label>
-                                    <input type="text" id="phone-number" name="phone_number">
+                                    <label for="phone-number">PHONE NUMBER (ONLY NUMBERS)</label>
+                                    <input type="number" id="phone-number" name="phone_number" required min="1111111111" max="9999999999" title="There must be no dashes, parentheses, or any non-integers in the input." placeholder="e.g. 1234567890">
                                 </div>
                                 <div id="input-pair">
                                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                                    <input type="text" id="confirm-password" name="confirm_password">
+
+                                    <!-- Password must have at least 8 characters and at least 1 uppercase letter, at least 1 lowercase letter, at least 1 number, and at least 1 special character -->
+                                    <input type="text" id="confirm-password" name="confirm_password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Your password must have at least 8 characters and at least 1 uppercase letter, at least 1 lowercase letter, at least 1 number, and at least 1 special character.">
                                 </div>
                             </div>
                         </div>
@@ -60,6 +64,7 @@
             <div id="bottom-third">
                 <button type="submit" form="sign-up-form">Create Account</button>
                 <div id="login-text">Already have an account? <a href="#">Log in</a></div>
+                <div id="copyright-footer">Copyright © 2022 Tyler Tran&ensp;<a href="https://github.com/tylertran349" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
             </div>
         </div>
     </body>
