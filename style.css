@@ -1,0 +1,129 @@
+* {
+    /*border: 1px solid yellowgreen;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    border: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#left-column {
+    width: 33.33%;
+    height: 100%;
+    background-image: url("background-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#right-column {
+    width: 66.67%;
+    height: 100%;
+}
+
+#top-third {
+    height: 33.33%;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} 
+
+#bottom-third {
+    height: 33.33%;
+    background-color: #f9fafb;
+}
+
+#middle-third {
+    height: 33.33%;
+    display: flex;
+    justify-content: flex-start;
+    background: white;
+}
+
+#top-third-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+#form-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 36px;
+    margin-top: 12px;
+}
+
+#middle-third {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    margin-left: 36px;
+}
+
+#inputs-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 72px;
+}
+
+#input-pair {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label {
+    letter-spacing: 0.09em;
+    font-size: 0.8em;
+}
+
+button, input {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 250px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+button {
+    margin-top: 36px;
+    margin-left: 36px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background: #eb8f8d;
+    color: white;
+    font-weight: bold;
+}
+
+#login-text {
+    margin-top: 36px;
+    margin-left: 36px;
+    font-weight: bold;
+}
+
+#login-text a {
+    color: #eb8f8d;
+    text-decoration: none;
+}
