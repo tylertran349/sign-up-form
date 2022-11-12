@@ -132,6 +132,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:active {
+    background: #975c5b;
+}
+
 #login-text {
     margin-top: 36px;
     margin-left: var(--left-margin);
